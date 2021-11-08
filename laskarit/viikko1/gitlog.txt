@@ -1,0 +1,107 @@
+commit ae7b10eea209b29cc32c35f3d39b41fd6078153a (HEAD -> master)
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:14:37 2021 +0200
+
+    Removed file1, renamed file2
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7b8d3ea30ef988833378b23519c8cc983548f33e
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:13:19 2021 +0200
+
+    Added tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+commit 85310d8d52fae206231befc92efe6a0978eba4fe
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:11:31 2021 +0200
+
+    Changes
+
+ eka.txt    | 5 ++---
+ kolmas.txt | 2 +-
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 37262045dc7f53d238a07113512f0723f443c1b0
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:10:15 2021 +0200
+
+    poisto ja uudelleennimeäminen
+
+ tiedosto.txt => eka.txt | 0
+ toinen.txt              | 1 -
+ 2 files changed, 1 deletion(-)
+
+commit 597c969da4324abefbe77d2ccc616fb0a9f86496
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:09:18 2021 +0200
+
+    poistettu tekstiä
+
+ tiedosto.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 7514e870cd35ae63c00b19e3abc98afe89cdcb46
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:08:45 2021 +0200
+
+    lisätty tekstiä
+
+ tiedosto.txt | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+
+commit d3de9b2e43f0694dde7c8e0ceee115ad116b3ed6
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:07:25 2021 +0200
+
+    muutokset lisätty
+
+ kolmas.txt | 1 +
+ toinen.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit b3ac0593b569001382257dda5a90c2c99685393b
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:07:01 2021 +0200
+
+    kolmas lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 63e80b194dcd115c4764f4c60dd50f6245e6b197
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:06:23 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 2 +-
+ toinen.txt   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit ff8b96c679f322ebbeb56bf0c0160b3c7600225d
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Sun Nov 7 17:05:23 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 2 ++
+ toinen.txt   | 1 +
+ 2 files changed, 3 insertions(+)
+
+commit 7f634895b1b644e5d0d0362c8ded7de5ab1d35e9
+Author: jonthus <joona.erkkila1@gmail.com>
+Date:   Thu Nov 4 11:44:20 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
