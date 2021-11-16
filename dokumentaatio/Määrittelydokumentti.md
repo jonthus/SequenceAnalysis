@@ -1,10 +1,10 @@
-Vaatimusmäärittely
+## Vaatimusmäärittely
 
-Sovelluksen tarkoitus
+### Sovelluksen tarkoitus  
 Sovelluksen tarkoitus on analysoida käyttäjän antamia DNA-sekvenssejä ja näyttää tiedot graafisesti, tai taulukkomuodossa. Sovelluksella on eri toiminnallisuuksia, joista käyttäjä saa valita.
 Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
-
-Käyttöliittymäluonnos
+  
+### Käyttöliittymäluonnos
 Käyttöliittymässä ei ole kirjautumista, sovelluksen käynnistäminen riittää.
 Käyttäjä aloittaa valitsemalla haluamansa työkalun.
 Käyttäjä valitsee nukleotidisekvenssit valitsemalla haluamansa tiedostot, jotka ovat FASTA- tai FASTQ-formaatissa.
@@ -12,7 +12,7 @@ Sovellukseen on mahdollista lisätä sekvenssejä käytettäväksi (sqlite).
 Käyttäjä voi valita halutun määrän sekvenssejä analysoitavaksi riippuen työkalusta.
 Käyttäjä ajaa työkalun, ja saa siitä tulokset, jotka ovat tallennettavissa.
 
-Perusversion tarjoama toiminnallisuus
+### Perusversion tarjoama toiminnallisuus
 Sovelluksen perustoiminnallisuuteen kuuluu erilaisia työkaluja.
 
 1. Kahden (tai enemmän) nukleotidisekvenssin vertailua. DNA-sekvenssit ovat FASTA- tai FASTQ-formaatissa. Näistä sekvensseistä tulostuu näytölle Scatter Plot -taulukko, 
@@ -22,7 +22,7 @@ jossa näytetään niiden samankaltaisuus prosentuaalisesti.
 
 Saadut taulukot on mahdollista tallentaa käyttäjän haluamassa formaatissa.
 
-Jatkokehitysideoita
+### Jatkokehitysideoita
 Sovellukseen on ajankäytön mukaisesti mahdollista tehdä jatkotoiminnallisuuksia.
 Näitä ovat esimerkiksi:
 - Multiple Sequence Alignment
