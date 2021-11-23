@@ -1,0 +1,7 @@
+/laskarit/viikko2/unicafe/.pytest_cache
+/laskarit/viikko2/unicafe/src/__pycache__
+/laskarit/viikko2/unicafe/src/tests/__pycache__
+.pytest_cache
+.coverage
+__pycache__
+htmlcov
