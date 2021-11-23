@@ -6,12 +6,13 @@
 
 
 ### Asennus
-
+- (pip3 install poetry, jos ei asennettu)
 - poetry install
 
 ### Ohjelman suoritus
 
 Ohjelman käynnistäminen
+- poetry shell
 - poetry run invoke start
 
 Testien suoritus
