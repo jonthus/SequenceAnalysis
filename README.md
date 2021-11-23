@@ -1,7 +1,20 @@
-OT-harjoitustyö  
+## OT-harjoitustyö  
+
+### Dokumentaatio
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
-[Komentorivi](/laskarit/viikko1/komentorivi.txt)  
-[Gitlog](/laskarit/viikko1/gitlog.txt)  
+[Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)
 
 
-![img](/laskarit/viikko2/coverage.png)
+### Asennus
+
+- poetry install
+
+### Ohjelman suoritus
+
+Ohjelman käynnistäminen
+- poetry run invoke start
+
+Testien suoritus
+- poetry run invoke test
+- poetry run invoke coverage-report
+
