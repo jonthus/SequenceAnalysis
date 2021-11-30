@@ -18,4 +18,4 @@ Ohjelman käynnistäminen
 Testien suoritus
 - poetry run invoke test
 - poetry run invoke coverage-report
-
+- poetry run invoke lint
