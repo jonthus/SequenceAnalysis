@@ -2,7 +2,7 @@
 
 ### Dokumentaatio
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
-[Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md) 
+[Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)  
 [Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)
 
 
