@@ -7,8 +7,8 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 ### Dokumentaatio
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
 [Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)  
-[Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)
-[Github Release]
+[Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)  
+[Latest Release](https://github.com/jonthus/ot-harjoitustyo/releases/tag/viikko5)  
 
 
 ### Asennus
