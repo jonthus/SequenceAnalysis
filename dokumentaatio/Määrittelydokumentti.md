@@ -17,7 +17,7 @@ Sovelluksen perustoiminnallisuuteen kuuluu erilaisia työkaluja.
 
 1. Kahden (tai enemmän) nukleotidisekvenssin vertailua. DNA-sekvenssit ovat FASTA- tai FASTQ-formaatissa. Näistä sekvensseistä tulostuu näytölle Scatter Plot -taulukko, 
 jossa näytetään niiden samankaltaisuus prosentuaalisesti. Tämä on toteutettu Viikkopalautuksessa 4.
-2. Ketjujen nukleotidimäärien esittäminen taulukkomuodossa (GC-pitoisuus).
+2. Ketjujen nukleotidimäärien esittäminen taulukkomuodossa (GC-pitoisuus). Tehty!
 3. Ketjujen pituuksien vertailua histogrammina.
 
 Saadut taulukot on mahdollista tallentaa käyttäjän haluamassa formaatissa.

@@ -6,7 +6,7 @@ def foo(ctx):
 
 @task
 def start(ctx):
-    ctx.run("python3 src/sequence.py")
+    ctx.run("python3 src/start.py")
 
 @task
 def test(ctx):

@@ -1,6 +1,8 @@
-
+import os
 from Bio import SeqIO
 import pylab
+
+HIIRI_FILENAME = os.path.join(os.path.dirname(__file__), 'hiiri.txt')
 
 class Sequence:
     """
@@ -55,8 +57,11 @@ class Sequence:
         temp = open(file, "r")
         return temp.read()
 
-if __name__ == "__main__":
-    Testi = 'hiiri.txt'
-    #testi = "kasvi.txt"
+def run():
+    # testi = "kasvi.txt"
     seq = Sequence()
-    seq.dotplot(Testi)
+    seq.dotplot(HIIRI_FILENAME)
+
+
+if __name__ == "__main__":
+    run()

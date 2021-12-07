@@ -11,6 +11,12 @@
 18.11. Työn rungon toteutus (poetry jne), 1 tunti  
 23.11. Perustoiminnallisuuden ja testien toteuttaminen, 2 tuntia  
 
+
+6.11. GC-% laskemisen, testien ja GUI:n toteutus, 3-5 tuntia
+7.11. Viimeistelyä, 1-2 tuntia
+
+
+
 >>>>>>> 07b87a49f435764d722f36fad67eb96f7550a2e4
 
 

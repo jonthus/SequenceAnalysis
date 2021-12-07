@@ -8,6 +8,7 @@
 ### Asennus
 - (pip3 install poetry, jos ei asennettu)
 - poetry install
+- pip3 install -r requirements.txt
 
 ### Ohjelman suoritus
 
