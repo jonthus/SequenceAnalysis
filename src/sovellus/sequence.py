@@ -1,6 +1,6 @@
-import os
 from Bio import SeqIO
 import pylab
+
 
 class Sequence:
     """
@@ -47,5 +47,4 @@ def run(file):
     seq.dotplot(file)
 
 
-if __name__ == "__main__":
-    run()
+# EOF

@@ -1,18 +1,36 @@
 
 def percentages(sequence):
-    g = sequence.count('G')
-    c = sequence.count('C')
+    """
+    Function for calculating percentages from a given sequence.
+
+    Args:
+        sequence: sequence to be calculated
+
+    Returns:
+        percent: %
+
+    """
+    guanine = sequence.count('G')
+    cytosine = sequence.count('C')
     total = len(sequence)
 
-    summa = g + c
+    summa = guanine + cytosine
     percent = summa / total
     return percent * 100
 
 
-def parseContent(file):
+def parsecontent(file):
+    """
+    Function for parsing the content of the given file.
+    Args:
+        file: file to be parsed
+
+    Returns:
+        Percentage from percentage function.
+    """
     data = ''
-    with open(file, 'r') as f:
-        for i in f:
+    with open(file, 'r') as iteration:
+        for i in iteration:
             if '>' in i:
                 continue
             data += i.strip()
@@ -20,10 +38,14 @@ def parseContent(file):
 
 
 def run(file):
-    return parseContent(file)
+    """
+    Runs the program.
+    Args:
+        file: file to be run
 
-
-if __name__ == '__main__':
-    run()
+    Returns:
+        Calculated %
+    """
+    return parsecontent(file)
 
 # EOF

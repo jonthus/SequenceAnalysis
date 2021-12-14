@@ -22,4 +22,4 @@ def coverage_report(ctx):
 
 @task
 def lint(ctx):
-    ctx.run("pylint .")
+    ctx.run("pylint sovellus")
