@@ -20,6 +20,7 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 
 Ohjelman käynnistäminen
 - poetry shell (jos ei aikaisemmin käynnistetty)
+- Varmista että olet src-kansiossa!
 - poetry run invoke start
 
 Ohjelman käyttöohje
