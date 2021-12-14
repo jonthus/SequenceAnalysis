@@ -22,6 +22,10 @@ Ohjelman käynnistäminen
 - poetry shell (jos ei aikaisemmin käynnistetty)
 - poetry run invoke start
 
+Ohjelman käyttöohje
+- Avaa haluamasi toiminto ja valitse tiedosto (oma tiedosto FASTA-formaatissa, tai tiedosto kansiosta src/files).
+- Ohjelma prosessoi antamasi tiedoston ja näyttää tulokset käyttöliittymässä.
+
 Testien suoritus
 - poetry run invoke test
 - poetry run invoke coverage-report
