@@ -1,9 +1,12 @@
 import unittest
-import gc_content
 import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from sovellus import sequence
+from sovellus import gc_content
 
-TESTDATA_FILENAME = os.path.join(os.path.dirname(__file__), 'lukutesti.txt')
-HIIRI_FILENAME = os.path.join(os.path.dirname(__file__), 'hiiri.txt')
+TESTDATA_FILENAME = os.path.join(os.path.dirname(__file__), 'testfiles/lukutesti.txt')
+HIIRI_FILENAME = os.path.join(os.path.dirname(__file__), 'testfiles/hiiri.txt')
 
 class TestGcContent(unittest.TestCase):
 
