@@ -15,7 +15,6 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 - (pip3 install poetry, jos ei asennettu)
 - poetry install
 - poetry shell
-- pip3 install -r requirements.txt
 
 ### Ohjelman suoritus
 
