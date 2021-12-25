@@ -51,7 +51,7 @@ Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `DotplotService` -servi
 Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `GcService` -serviceä, joka käynnistää `gc_run` -funktion annetulla tiedostolla.  
 `gc_run` -funktio kutsuu `gc_content` -tiedoston `parseContent` ja `percentages` funktioita tässä järjestyksessä käyttäjän valitsemalla tiedostolla. `percentages` -funktio palauttaa arvon `gc_run` -funktiolle, joka näyttää saadun arvon käyttöliittymässä.  
 
-![kaavio4](./Gc_luokkakaavio.png)
+![kaavio4](./GC_luokkakaavio.png)
 
 ### Sekvenssien pituuksien vertailu 
 Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `HistogramService` -serviceä, joka käynnistää `histogram_run` -funktion annetulla tiedostolla.  
