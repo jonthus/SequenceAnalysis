@@ -22,7 +22,7 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 Ohjelman käynnistäminen
 ```
 - poetry shell (jos ei aikaisemmin käynnistetty)
-- Varmista että olet SequenceAnalysis-kansiossa!
+- Varmista että olet pääkansiossa!
 - poetry run invoke start
 ```
 
