@@ -1,33 +1,64 @@
-## Arkkitehtuuri
+# Arkkitehtuuri
 
-### Projektin rakenne
+## Projektin rakenne
 
-Projektin rakenne on jaoteltu seuraavasti:
-1. src  
-  * 2. files
-  * 3. sovellus
-  * 4. test
-  * 5. ui
+Projektin rakenne on jaoteltu seuraavasti:  
+- `src`  
+  - `input_files`
+  - `output_files`
+  - `services`
+  - `entities`
+  - `test`
+    - `testfiles`
+  - `ui`
 
-Src kansioiden yhdistävä pääkansio.  
-Files on vastuussa tiedostojen talletuksesta ja on esimerkkitiedostojen sijainti.  
-Datan käsittely ja tiedostojen lukeminen tapahtuu sovellus-kansiossa.  
-Testaamiseen liittyvät toiminnot löytyy tests kansiosta.  
-Ui-kansiossa on käyttöliittymän ja tulostukseen, sekä datan näyttämiseen liittyvät toiminnot.  
+Alla on selitetty projektin rakenne yksityiskohtaisemmin:  
+- `src` on kansioita yhdistävä pääkansio.  
+- `input_files` on esimerkkitekstitiedostojen sijainti.
+- `output_files` on vastuussa tiedostojen tallentamisesta, ja esimerkkitiedostot tallennetaan sinne.
+- `services` on vastuussa sovelluslogiikan eriyttämisestä käyttöliittymästä.
+- Datan käsittely ja tiedostojen lukeminen tapahtuu `entities`-kansiossa.  
+- Testaamiseen liittyvät toiminnot löytyy `tests` -kansiosta, ja testeihin tarvittavat tiedostot `testfiles` -kansiosta.  
+- `ui`-kansiossa on käyttöliittymän ja tulostukseen, sekä datan näyttämiseen liittyvät toiminnot.  
 
-Alustava luokkakaavio
+Koodin pakkausrakenne on esitetty alla olevassa pakkauskaaviossa.
 
-![kaavio](./Alustava_luokkakaavio.png)
+![kaavio](./Pakkauskaavio.png)
 
-### Sovelluslogiikka
 
-Sovellus käynnistyy käyttöliittymästä, joka kutsuu yksitellen käyttäjän valintojen mukaisesti Dotplot, GC ja Histogrammi -luokkia ja funktioita.  
-Dotplot-luokka alustaa Sequence(), luokan, joka ajaa dotplot() funktion käyttäjän valitsemalla tiedostolla.
-Dotplot-funktio prosessoi datan ja tallentaa saadun tiedoston 'sequence.png' -tiedostoon, ja näyttää sen käyttöliittymässä.
-GC-funktio ajaa parsecontent ja percentages -funktiot käyttäjän valitsemalla tiedostolla, ja tulostaa saadun prosenttiluvun käyttöliittymässä.
+## Käyttöliittymä
 
-### TODO: histogrammin sovelluslogiikka, luokka- ja sekvenssikaavion päivitys
+Käyttöliittymällä on neljä eri näkymää ja kolme eri toimintoa:  
+- Etusivu  
+  - Kahden sekvenssin samanlaisuus  
+  - Sekvenssin GC-% laskeminen  
+  - Sekvenssien pituuksien vertailu  
 
-Alustava sekvenssikaavio  
+Käyttöliittymän ja sovelluslogiikan toiminnot on selitetty yksityiskohtaisemmin Sovelluslogiikka -osion alla.
 
-![kaavio](./sekvenssikaavio.png)
+## Sovelluslogiikka
+
+Tässä osiossa avataan sovelluslogiikka siten, että jokaisen käyttäjälle mahdollisen toiminnallisuuden kautta selitetään, mitä ohjelman koodissa tapahtuu.  
+
+1. Käyttäjä haluaa selvittää valitsemistaan sekvensseistä samanlaisuuden:  
+Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `DotplotService`ä, joka käynnistää `dotplot_run` -funktion annetulla tiedostolla.  
+`dotplot_run` alustaa `Dotplot`, luokan, joka ajaa `get_lengths` -metodin käyttäjän valitsemalla tiedostolla. `get_lengths` -metodi palauttaa datan ja tarvittavat parametrit `dotplot_run` -funktiolle, joka vie nämä `plots` -kansion `Dotplot_plot` tiedoston `dotplot_plotting` -funktiolle. Tämä metodi luo ja tallentaa tiedoston `output_files` -kansioon nimellä `dotplot.png`. Tämän jälkeen käyttöliittymä hakee `output_files` -kansiosta tämän tiedoston ja näyttää sen käyttöliittymässä.  
+
+2. Käyttäjä haluaa selvittää valitsemastaan sekvesseistä GC-%:  
+Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `GcService`ä, joka käynnistää `gc_run` -funktion annetulla tiedostolla.  
+`gc_run` -funktio kutsuu `gc_content` -tiedoston `parseContent` ja `percentages` funktioita tässä järjestyksessä käyttäjän valitsemalla tiedostolla. `percentages` -funktio palauttaa arvon `gc_run` -funktiolle, joka näyttää saadun arvon käyttöliittymässä.  
+
+3. Käyttäjä haluaa vertailla valitsemistaan sekvensseistä pituuksia:  
+Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `HistogramService`ä, joka käynnistää `histogram_run` -funktion annetulla tiedostolla.  
+`histogram_run` alustaa `Histogram`, luokan, joka ajaa `calculate_lengths`, `calculate_bins` ja `create_plot` -metodit tässä järjestyksessä käyttäjän valitsemalla tiedostolla. Nämä metodit palauttavat datan ja tarvittavat parametrit `histogram-run` -funktiolle, joka vie nämä `plots` -kansion `Histogram_plot` tiedoston `create_plot` -funktiolle. Tämä metodi luo ja tallentaa tiedoston `output_files` -kansioon nimellä `histogram.png`. Tämän jälkeen käyttöliittymä hakee `output_files` -kansiosta tämän tiedoston ja näyttää sen käyttöliittymässä.  
+
+Koodin sovelluslogiikka on myös esitetty alla olevassa sekvenssikaaviossa.  
+
+![kaavio2](./Sekvenssikaavio.png)
+
+## Tietojen tallennus
+Tietojen tallennus tapahtuu `plots` kansion `Dotplot_plot` ja `Histogram_plot` tiedostoissa. GC-% toiminnallisuus ei tallenna tiedostoa. 
+Sovellus tallentaa sovelluslogiikassa mainitut oletuksena nimetyt `dotplot.png` ja `histogram.png` -tiedostot `output_files` -kansioon .png-muodossa. Nämä tiedostonimet ovat oletusarvoisia, eikä niitä voi muuttaa. Kaikki tiedostojen talletus tapahtuu `output_files` -kansiossa, eikä tätäkään voi muuttaa. Tiedostojen tallentamisformaattia ei voi myöskään muuttaa.
+
+## Sovellukseen jääneet heikkoudet
+Käyttäjän ei ole tällä hetkellä mahdollista valita tiedostonimeä, formaattia eikä vaihtaa tallentamiskansiota, vaan ne ovat oletusarvoisia.
