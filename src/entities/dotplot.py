@@ -38,9 +38,8 @@ class Sequence:
         pylab.xlabel("%s (length %i bp)" % (first.id, len(first)))
         pylab.ylabel("%s (length %i bp)" % (second.id, len(second)))
         pylab.title("Dot plot")
-        pylab.savefig('sequence.png')
-        return True
-
+        pylab.savefig('testsequence.png')
+        pylab.show()
 
 def run(file):
     seq = Sequence()
