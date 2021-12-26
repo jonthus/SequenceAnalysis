@@ -5,6 +5,7 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 
 ### Dokumentaatio
 [Käyttöohje](/dokumentaatio/Käyttöohje.md)  
+[Testausdokumentti](/dokumentaatio/testaus.md)  
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
 [Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)  
 [Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)  
