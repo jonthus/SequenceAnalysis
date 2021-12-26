@@ -16,7 +16,7 @@ Käyttöohjeessa on annettu esimerkki ohjelman suorittamisesta.
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
 [Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)  
 [Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)  
-[Latest Release](https://github.com/jonthus/ot-harjoitustyo/releases/tag/loppupalautus)  
+[Latest Release](https://github.com/jonthus/ot-harjoitustyo/releases/tag/Loppupalautus)  
 
 
 ### Asennus
