@@ -1,7 +1,7 @@
 ## DNA Sekvenssianalyysi
 
 Työn tarkoitus on analysoida ja laskea käyttäjän antamia DNA-sekvenssejä ja näyttää tiedot graafisesti, tekstinä tai taulukkomuodossa. Sovelluksella on eri toiminnallisuuksia, joista käyttäjä saa valita.
-Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
+Sovelluksen määrittelydokumentissa ja käyttöohjeessa kuvataan näitä työkaluja.
 
 ### Dokumentaatio
 [Käyttöohje](/dokumentaatio/Käyttöohje.md)  
