@@ -6,15 +6,15 @@ def foo(ctx):
 
 @task
 def start(ctx):
-    ctx.run("python3 ui/gui.py")
+    ctx.run("python3 src/ui/gui.py")
 
 @task
 def test(ctx):
-    ctx.run("pytest .")
+    ctx.run("pytest src")
 
 @task
 def coverage(ctx):
-    ctx.run("coverage run --branch -m pytest .")
+    ctx.run("coverage run --branch -m pytest src")
 
 @task(coverage)
 def coverage_report(ctx):
@@ -22,4 +22,4 @@ def coverage_report(ctx):
 
 @task
 def lint(ctx):
-    ctx.run("pylint sovellus")
+    ctx.run("pylint src")

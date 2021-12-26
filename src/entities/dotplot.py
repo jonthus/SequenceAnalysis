@@ -1,25 +1,25 @@
 from Bio import SeqIO
-import pylab
 
 
-class Sequence:
+class Dotplot:
     """
-    Sequence class for creating different tables.
+    Luokka dotplotin luomiseen.
     """
 
-    def dotplot(self, file):
+    def get_lengths(self, file):
         """
-        Function for creating a dotplot from two sequences.
-        Prints True if succeeds.
+        Metodi, joka laskee sekvenssien pituudet annetusta tiedostosta.
 
         Args:
-            file: file containing two sequences to be compared.
+            file: tiedosto, josta luetaan dataa.
 
         Returns:
-            True
+            first: ensimmäinen sekvenssi
+            second: toinen sekvenssi
+            data: sekvenssidata
 
         """
-        with open(file) as iteration:
+        with open(file, encoding="utf-8") as iteration:
             temp = SeqIO.parse(iteration, "fasta")
             first = next(temp)
             second = next(temp)
@@ -32,18 +32,7 @@ class Sequence:
              for j in range(len(first_seq) - window)]
             for i in range(len(second_seq) - window)
         ]
-
-        pylab.gray()
-        pylab.imshow(data)
-        pylab.xlabel("%s (length %i bp)" % (first.id, len(first)))
-        pylab.ylabel("%s (length %i bp)" % (second.id, len(second)))
-        pylab.title("Dot plot")
-        pylab.savefig('testsequence.png')
-        pylab.show()
-
-def run(file):
-    seq = Sequence()
-    seq.dotplot(file)
+        return first, second, data
 
 
 # EOF

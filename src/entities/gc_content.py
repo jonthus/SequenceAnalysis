@@ -1,13 +1,13 @@
 
 def percentages(sequence):
     """
-    Function for calculating percentages from a given sequence.
+    Funktio, joka laskee GC-% annetusta sekvenssistä.
 
     Args:
-        sequence: sequence to be calculated
+        sequence: sekvenssi, josta lasketaan.
 
     Returns:
-        percent: %
+        percent: percent * 100
 
     """
     guanine = sequence.count('G')
@@ -21,31 +21,20 @@ def percentages(sequence):
 
 def parsecontent(file):
     """
-    Function for parsing the content of the given file.
+    Funktio lukee tiedoston ja tallentaa sen merkkijonoksi.
     Args:
-        file: file to be parsed
+        file: tiedosto luettavaksi
 
     Returns:
-        Percentage from percentage function.
+        data: tiedosto tallennettuna merkkijonoksi
     """
     data = ''
-    with open(file, 'r') as iteration:
+    with open(file, 'r', encoding="utf-8") as iteration:
         for i in iteration:
             if '>' in i:
                 continue
             data += i.strip()
-    return percentages(data)
+    return data
 
-
-def run(file):
-    """
-    Runs the program.
-    Args:
-        file: file to be run
-
-    Returns:
-        Calculated %
-    """
-    return parsecontent(file)
 
 # EOF
