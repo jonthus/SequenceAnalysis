@@ -4,6 +4,7 @@ Työn tarkoitus on analysoida ja laskea käyttäjän antamia DNA-sekvenssejä ja
 Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 
 ### Dokumentaatio
+[Käyttöohje](/dokumentaatio/Käyttöohje.md)  
 [Määrittelydokumentti](/dokumentaatio/Määrittelydokumentti.md)  
 [Tuntikirjanpito](/dokumentaatio/Tuntikirjanpito.md)  
 [Arkkitehtuuri](/dokumentaatio/arkkitehtuuri.md)  
