@@ -38,7 +38,7 @@ Käyttöliittymän ja sovelluslogiikan toiminnot on selitetty yksityiskohtaisemm
 
 ## Sovelluslogiikka
 
-Tässä osiossa avataan sovelluslogiikka siten, että jokaisen käyttäjälle mahdollisen toiminnallisuuden kautta selitetään, mitä ohjelman koodissa tapahtuu.  
+Tässä osiossa avataan sovelluslogiikka siten, että jokaisen käyttäjälle mahdollisen toiminnallisuuden kautta selitetään, mitä ohjelman koodissa tapahtuu, kun sitä kutsutaan, sekä näytetään ohjelman toiminta myös luokkakaaviona selityksen alla. Toiminnallisuudet ovat toteutuksessa eriytetty toisistaan UI:ta lukuunottamatta, niin on selkeämpää näyttää kaikki omana luokkakaavionaan.
 
 ### Kahden sekvenssin samanlaisuus  
 Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `DotplotService` -serviceä, joka käynnistää `dotplot_run` -funktion annetulla tiedostolla.  
@@ -51,15 +51,13 @@ Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `DotplotService` -servi
 Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `GcService` -serviceä, joka käynnistää `gc_run` -funktion annetulla tiedostolla.  
 `gc_run` -funktio kutsuu `gc_content` -tiedoston `parseContent` ja `percentages` funktioita tässä järjestyksessä käyttäjän valitsemalla tiedostolla. `percentages` -funktio palauttaa arvon `gc_run` -funktiolle, joka näyttää saadun arvon käyttöliittymässä.  
 
-![kaavio4](./Gc_luokkakaavio.png)
+![kaavio4](./GC_luokkakaavio.png)
 
 ### Sekvenssien pituuksien vertailu 
 Tiedoston valitsemisen jälkeen käyttöliittymä kutsuu `HistogramService` -serviceä, joka käynnistää `histogram_run` -funktion annetulla tiedostolla.  
 `histogram_run` alustaa `Histogram`, luokan, joka ajaa `calculate_lengths`, `calculate_bins` ja `create_plot` -metodit tässä järjestyksessä käyttäjän valitsemalla tiedostolla. Nämä metodit palauttavat datan ja tarvittavat parametrit `histogram-run` -funktiolle, joka vie nämä `plots` -kansion `Histogram_plot` tiedoston `create_plot` -funktiolle. Tämä metodi luo ja tallentaa tiedoston `output_files` -kansioon nimellä `histogram.png`. Tämän jälkeen käyttöliittymä hakee `output_files` -kansiosta tämän tiedoston ja näyttää sen käyttöliittymässä.  
 
 ![kaavio5](./Histogrammi_luokkakaavio.png)
-
-Koodin sovelluslogiikka on myös esitetty alla olevassa sekvenssikaaviossa.  
 
 ## Tietojen tallennus
 Tietojen tallennus tapahtuu `plots` kansion `Dotplot_plot` ja `Histogram_plot` tiedostoissa. GC-% toiminnallisuus ei tallenna tiedostoa. 
