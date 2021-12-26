@@ -7,21 +7,19 @@ Sovelluksen perustoiminnallisuudessa kuvataan näitä työkaluja.
 ### Käyttöliittymäluonnos
 Käyttöliittymässä ei ole kirjautumista, sovelluksen käynnistäminen riittää.
 Käyttäjä aloittaa valitsemalla haluamansa työkalun.
-Käyttäjä valitsee nukleotidisekvenssit valitsemalla haluamansa tiedostot, jotka ovat FASTA- tai FASTQ-formaatissa.
-Sovellukseen on mahdollista lisätä sekvenssejä käytettäväksi (sqlite).
-Käyttäjä voi valita halutun määrän sekvenssejä analysoitavaksi riippuen työkalusta.
-Käyttäjä ajaa työkalun, ja saa siitä tulokset, jotka ovat tallennettavissa.
+Käyttäjä valitsee nukleotidisekvenssit valitsemalla haluamansa tiedostot, jotka ovat FASTA-formaatissa `.txt`-päätteen tiedostona.
+Sekvenssejä olisi hyvä olla 2 tai enemmän tiedostossa järkevän analysoinnin takaamiseksi.
+Käyttäjä ajaa työkalun, ja saa siitä tulokset, jotka tallennetaan `output_files` -kansioon.
 
 ### Perusversion tarjoama toiminnallisuus
 Sovelluksen perustoiminnallisuuteen kuuluu erilaisia työkaluja.
 
-1. Kahden (tai enemmän) nukleotidisekvenssin vertailua. DNA-sekvenssit ovat FASTA- tai FASTQ-formaatissa. Näistä sekvensseistä tulostuu näytölle Scatter Plot -taulukko, 
-jossa näytetään niiden samankaltaisuus prosentuaalisesti. Tämä on toteutettu Viikkopalautuksessa 4.
-2. Ketjujen nukleotidimäärien esittäminen taulukkomuodossa (GC-pitoisuus).
-jossa näytetään niiden samankaltaisuus prosentuaalisesti.  tehty!
+1. Kahden (tai enemmän) nukleotidisekvenssin vertailua. DNA-sekvenssit ovat FASTA- tai FASTQ-formaatissa. Näistä sekvensseistä tulostuu näytölle Dotplot -taulukko, 
+jossa näytetään niiden samankaltaisuus prosentuaalisesti.
+2. Ketjujen nukleotidimäärien esittäminen prosentuaalisesti (GC-pitoisuus).
 3. Ketjujen pituuksien vertailua histogrammina.
 
-Saadut taulukot on mahdollista tallentaa käyttäjän haluamassa formaatissa.
+Saadut taulukot tallennetaan `.png` -formaatissa.
 
 ### Jatkokehitysideoita
 Sovellukseen on ajankäytön mukaisesti mahdollista tehdä jatkotoiminnallisuuksia.

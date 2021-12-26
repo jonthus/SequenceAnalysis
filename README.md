@@ -1,7 +1,14 @@
 ## DNA Sekvenssianalyysi
 
 Työn tarkoitus on analysoida ja laskea käyttäjän antamia DNA-sekvenssejä ja näyttää tiedot graafisesti, tekstinä tai taulukkomuodossa. Sovelluksella on eri toiminnallisuuksia, joista käyttäjä saa valita.
-Sovelluksen määrittelydokumentissa ja käyttöohjeessa kuvataan näitä työkaluja.
+
+Sovelluksella on neljä eri näkymää ja kolme eri toimintoa:  
+- Etusivu  
+  - Kahden sekvenssin samanlaisuus  
+  - Sekvenssin GC-% laskeminen  
+  - Sekvenssien pituuksien vertailu  
+
+Käyttöohjeessa on annettu esimerkki ohjelman suorittamisesta.
 
 ### Dokumentaatio
 [Käyttöohje](/dokumentaatio/Käyttöohje.md)  
@@ -16,14 +23,12 @@ Sovelluksen määrittelydokumentissa ja käyttöohjeessa kuvataan näitä työka
 ```
 - (pip3 install poetry, jos ei asennettu)
 - poetry install
-- poetry shell
 ```
 
 ### Ohjelman suoritus
 
 Ohjelman käynnistäminen
 ```
-- poetry shell (jos ei aikaisemmin käynnistetty)
 - Varmista että olet pääkansiossa!
 - poetry run invoke start
 ```
