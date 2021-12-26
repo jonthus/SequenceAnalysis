@@ -9,6 +9,10 @@
 7.12. Viimeistelyä, 1-2 tuntia  
 13.12. UI:n uudelleenkirjoittamista, noin 2-3 tuntia.  
 14.12. Sovellusrakenteen refaktorointia, noin 1-2 tuntia.  
+25.12. Sovellusrakenteen uusimista, 5-6 tuntia.
+25.12  Testien kirjoittamista, 2 tuntia
+26.12. Ohjelman dokumentaation kirjoittamista ja projektin viimeistelemistä, 6 tuntia
 
-Yhteensä: 17-22 tuntia
+
+Yhteensä: 30-36 tuntia
 
