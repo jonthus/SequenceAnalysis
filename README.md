@@ -16,14 +16,12 @@ Sovelluksen määrittelydokumentissa ja käyttöohjeessa kuvataan näitä työka
 ```
 - (pip3 install poetry, jos ei asennettu)
 - poetry install
-- poetry shell
 ```
 
 ### Ohjelman suoritus
 
 Ohjelman käynnistäminen
 ```
-- poetry shell (jos ei aikaisemmin käynnistetty)
 - Varmista että olet pääkansiossa!
 - poetry run invoke start
 ```
