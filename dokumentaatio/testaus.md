@@ -25,3 +25,6 @@ Testikattavuuden haarautumakattavuus on 100%. Testikattavuuteen ei ole otettu mu
 
 Sovellus on testattu Linux-ympäristössä asentamalla se HY:n etätyöpöydälle, asentamalla se, ja ajamalla kaikki mahdolliset komennot. 
 Kaikki määrittelydokumentin listaamat toiminnallisuudet on käyty läpi.
+
+## Sovellukseen jääneet bugit
+Kun valitaan yksi tiedosto luettavaksi käyttöliittymässä, ja tämän jälkeen valitaan suoraan uusi tiedosto ilman, että poistutaan takaisin etusivulle, niin tätä seuraava tiedosto näkyy rajattuna kuvana. Ongelman voi välttää poistumalla etusivulle välissä.
