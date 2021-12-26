@@ -11,13 +11,13 @@ WRONG_FILENAME = os.path.join(os.path.dirname(__file__), 'testfiles/histogram.pn
 class TestValidationService(unittest.TestCase):
 
     def test_file_type(self):
-        val = ValidationService.file_type(CORRECT_FILENAME)
+        val = validation_service.file_type(CORRECT_FILENAME)
         self.assertEqual(val, True)
 
     def test_file_type_fails(self):
-        val = ValidationService.file_type(WRONG_FILENAME)
+        val = validation_service.file_type(WRONG_FILENAME)
         self.assertEqual(val, False)
 
     def test_is_fasta(self):
-        val = ValidationService.is_fasta(CORRECT_FILENAME)
+        val = validation_service.is_fasta(CORRECT_FILENAME)
         self.assertEqual(val, True)
