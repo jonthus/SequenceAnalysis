@@ -2,7 +2,7 @@
 
 ### Ohjelman toiminnot
 
-Ohjelman on neljä eri näkymää ja kolme eri toimintoa:  
+Ohjelmalla on neljä eri näkymää ja kolme eri toimintoa:  
 - Etusivu  
   - Kahden sekvenssin samanlaisuus  
   - Sekvenssin GC-% laskeminen  
