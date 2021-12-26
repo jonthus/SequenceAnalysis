@@ -1,5 +1,15 @@
 ## Käyttöohje
 
+### Ohjelman toiminnot
+
+Ohjelman on neljä eri näkymää ja kolme eri toimintoa:  
+- Etusivu  
+  - Kahden sekvenssin samanlaisuus  
+  - Sekvenssin GC-% laskeminen  
+  - Sekvenssien pituuksien vertailu  
+
+Tässä dokumentissa esitellään ensimmäisen toiminnon käyttö esimerkkinä. Muiden toimintojen käyttö on lähes identtistä.
+
 ### Ohjelman käynnistäminen
 ```
 - poetry install
